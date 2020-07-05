@@ -1,38 +1,8 @@
 
-Sussex governance docs word search project
+Open governance docs search project
+-----------------------------------
 
-How to do a word search on the collection of PDFs, office files, and scans.
-
-
-Tools:
-
-- pdfgrep, a unix utility for searching for text in PDF files.
-
-- Libreoffice or OpenOffice. For converting Office files to PDF, tabulating results of searches.
-
-- ImageMagick. For converting scans to TIFF, ready for OCR software ...
-
-- tesseract. OCR software.
-
-- find.  Built-in unix command for searching directory tree for files.
-
-
-It's best to install the software using a package manager.  If you use Linux you will know about these already.  Mac users, there are also package managers for Mac which give you access to Unix utilities.  I use MacPorts.  There is also HomeBrew. Once you have installed MacPorts, type
-
-	sudo port install pdfgrep
-
-Libreoffice is available as a standalone package.
-
-
-Workflow:
-
-1. Convert office files with script convert_if_needed.sh
-
-2. Make searchable PDF files which are scans with script convert_scanned_odf.sh (this can take a long time, about a minute per page).  Resulting *.pdf files have new ending *._searchable.pdf
-
-3. Perform the text search to count occurrences and dump non-zero results to file, with script search_for. The number of occurrences is given as the last number.
-
-4. Convert .txt file to a table in LibreOffice (you can use Excel of course).
+How to do text searches on the collection of PDFs, office files, and scans.
 
 
 convert_if_needed.sh file
@@ -84,7 +54,7 @@ Equivalent to (to be executed from a directory under which all the files are sto
 
 Spreadsheet operation:
 
-	Data -> Text to Columns, choose separator "/"
+	Data -> Text to Columns..., choose separator "/"
 
 Counting PDF files:
 
