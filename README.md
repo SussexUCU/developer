@@ -64,8 +64,9 @@ Libreoffice is available as a standalone package. You then have to ensure that `
 > `	Data -> Text to Columns...`, choose separator "/"`
 The number of occurrences will be the last number in the row.
 
-## <a name="dev"></a>Things that need improving or doing
+## Things that need improving or doing
 
+1. More error checking and exit codes.
 1. `search_for.sh`
    1. Make command-line syntax more like `pdfgrep`, for which it is just a wrapper.
    1. `string.txt` format. Include search date/time in filename.
