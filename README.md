@@ -43,7 +43,8 @@ It's best to install the software using a package manager.  If you use Linux you
 
 >	`sudo port install tesseract`
 
-Libreoffice is available as a standalone package.
+Libreoffice is available as a standalone package. You then have to ensure that `soffice` is on your path, e.g. in your `.bashrc` file add
+> `export PATH="$PATH:/Applications/LibreOffice.app/Contents/MacOS"`
 
 ## Workflow:
 
