@@ -5,7 +5,7 @@ Place for keeping and developing open-governance tools.
 
 The tools are intended to help search a large number of documents for simple text strings. The searches are performed on PDF files. Basic Tools to convert office files and PDF scans to searchable PDF are included. The conversion need only be done once. The tools are bash scripts running open-source software.
 
-There is plenty of room for improvement - the tools were written to a tight deadline by an inexperienced coder. You're very welcome to contribute - [see below][#things-that-need-improving-or-doing] for some ideas.
+There is plenty of room for improvement - the tools were written to a tight deadline by an inexperienced coder. You're very welcome to contribute - [see below](#things-that-need-improving-or-doing) for some ideas.
 
 ## Tools
 
