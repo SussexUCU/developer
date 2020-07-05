@@ -4,7 +4,7 @@ Open governance docs search project
 
 How to do text searches on the collection of PDFs, office files, and scans.
 
-[This is just a bit more on how to use the scripts.]
+[This is just a bit more on how to use the scripts. I guess this should go into the scripts' help and the github.io page.]
 
 convert_if_needed.sh file
 --------------------
