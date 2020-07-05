@@ -49,13 +49,13 @@ Libreoffice is available as a standalone package. You then have to ensure that `
 ## Workflow:
 
 1. Convert office files with script `convert_if_needed.sh`. This should be run by `find`, i.e.
-> 	`find . -name \"\*.doc\*\" -exec convert_if_needed.sh {} \;`
+> 	`find . -name "*.doc*" -exec convert_if_needed.sh {} \;`
 
 2. Check for unsearchable PDF files with `check_scanned_pdf.sh`
-> `find . -name \"\*.pdf\" -exec check_scanned_pdf.sh {} \;`
+> `find . -name "*.pdf" -exec check_scanned_pdf.sh {} \;`
 
-3. If any are found, make searchable PDF files which are scans with script `convert_scanned_odf.sh` (this can take a long time, about a minute per page).  Resulting files from `\*.pdf` files have new ending `\*.\_searchable.pdf`.  One can use the output of `check_scanned_pdf.sh` and `xargs`, or just search again:
-> 	`find . -name \"\*.pdf\" -exec convert_scanned_pdf.sh {} \;`
+3. If any are found, make searchable PDF files which are scans with script `convert_scanned_odf.sh` (this can take a long time, about a minute per page).  Resulting files from `*.pdf` files have new ending `*._searchable.pdf`.  One can use the output of `check_scanned_pdf.sh` and `xargs`, or just search again:
+> 	`find . -name "*.pdf" -exec convert_scanned_pdf.sh {} \;`
 
 4. Now you have everything in the form of search PDF. To perform the text search to count occurrences and dump non-zero results to file, use the script `search_for`. The number of occurrences is given as the /<number> after the path of the file. Can do case-insensitive and recursive searches of a directory tree.
 > `search_for.sh -i -R -s "string"`
