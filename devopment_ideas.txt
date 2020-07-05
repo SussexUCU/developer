@@ -1,0 +1,15 @@
+devlopment ideas
+----------------
+
+
+Generate an HTML file with working links to Sussex Direct, which should look
+something like
+
+<a href="/page.php?page=group_doc_display&amp;trail=committees%2C%2Cgroup_members&amp;document_code=118570&amp;rel=AUTH&amp;format=application%2Fpdf&amp;file_name=C-236-20+Dates+for+2017-18.pdf" title="View/Download C-236-20 Council and committee dates 2017/18" class="tooltip">C-236-20 Council and committee dates 2017/18</a>
+
+document_code values can be found in HTML source code on Sussex Direct committee pages.
+
+Need to refer back to original file (e.g. a .doc) if a conversion to PDF has taken place.
+
+Mark
+03.07.20
