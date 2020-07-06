@@ -36,11 +36,12 @@ Could probably develop so it uses the output of check_scanned_pdf rather than se
 Image conversion of scanned PDF is probably not optimised, but (at least) 600 dpi appears to be necessary to get the error rate down so that it's not obvious.
 
 
-search_for.sh [-i] [-R] -s "string"
+search_for.sh [-h] [-i] [-o <output_directory]  "string"
 -------------
 
+-h  print usage info
 -i  Case-insensitive
--R  Recursive, following symbolic links.
+-o  output folder
 
 Descends directory tree from current one and performs the text search on PDF file to count occurrences of "string". Dumps pathnames of files with non-zero results to file. The number of occurrences is given as the last number, also separated by a /, to aid breaking up the data with a spreadsheet.
 
