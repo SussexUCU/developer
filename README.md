@@ -1,4 +1,4 @@
-# developer
+# ogustools
 Place for keeping and developing open-governance tools.
 
 ## Overview
@@ -23,7 +23,7 @@ Convert a scan in a single PDF file to searchable pdf, using ImageMagick and tes
 
 #### search_for.sh 
 
-Descends directory tree from current one and performs the text search on PDF file to count occurrences of a string.
+Descends directory tree from current one and performs the text search on PDF file to count occurrences of a string, writing results to a file.
 
 ## Required software
 
@@ -58,7 +58,7 @@ Libreoffice is available as a standalone package. You then have to ensure that `
 > 	`find . -name "*.pdf" -exec convert_scanned_pdf.sh {} \;`
 
 4. Now you have everything in the form of search PDF. To perform the text search to count occurrences and dump non-zero results to file, use the script `search_for`. The number of occurrences is given as the /<number> after the path of the file. Can do case-insensitive and recursive searches of a directory tree.
-> `search_for.sh -i -R -s "string"`
+> `search_for.sh -i "string"`
 
 5. Convert `string.txt` file, which contains files with the string, and the number of occurrences, to a table in LibreOffice (you can use Excel of course).
 > `	Data -> Text to Columns...`, choose separator "/"`
