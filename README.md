@@ -1,5 +1,5 @@
 # ogustools
-Place for keeping and developing open-governance tools.
+Place for keeping and developing tools in the Open Governance at the University of Sussex project.
 
 ## Overview
 
@@ -69,8 +69,7 @@ The number of occurrences will be the last number in the row.
 1. More error checking and exit codes.
 1. `search_for.sh`
    1. Make command-line syntax more like `pdfgrep`, for which it is just a wrapper.
-   1. `string.txt` format. Include search date/time in filename.
-   1. `string.txt` format.  Having the number of occurrence of the string separated by a '/' is not very useful. 
+   1. `string.txt` format.  Having the number of occurrence of the string separated by a '/' may not be the best idea. 
 1. Other scripts: write so they can descend a directory tree, and don't have to be run with `find`.
 1. Script to generate URLs from filenames in `string.txt` (need to extract information from university committee pages).
 1. script to generate a table of String, Filename, Number of occurrences, URL; in `.ods` or `.html` format.
