@@ -37,8 +37,8 @@ fi
 
 results_file="${OUT_DIR}${string}_${DATE_TIME}.txt"
 
-echo ${OUT_DIR}
-echo "$results_file"
+echo "Searching for string ${string}"
+echo "Writing results to $results_file"
 
 pdfgrep ${CASE} -R -c -H "$string" --match-prefix-separator / . | sed '/0$/d' > "${results_file}"
 
